@@ -1,45 +1,63 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="NavTop">
+    <ul class="NavTop__list">
+        <li class="NavTop__item">
+            <a class="NavTop__link NavTop__link--logo" href="#">DMForge</a>
+        </li>
+        <li class="NavTop__item NavTop__item--right">
+            <a class="NavTop__link" href="#">Account</a>
+        </li>
+        <li class="NavTop__item NavTop__item--right">
+            <a class="NavTop__link" href="#">File</a>
+        </li>
+    </ul>
+</nav>
+<nav class="NavSide">
+    <ul class="NavSide__list">
+        <li class="NavSide__item">
+            <a href="#" class="NavSide__link">
+                <i class="NavSide__image icon-home"></i>
+                <span class="NavSide__text">Dashboard</span>
+            </a>
+        </li>
+        <li class="NavSide__item">
+            <a class="NavSide__link" href="#">
+                <i class="NavSide__image icon-journey"></i>
+                <span class="NavSide__text">Adventures</span>
+            </a>
+        </li>
+        <li class="NavSide__item">
+            <a class="NavSide__link NavSide__link--active" href="#">
+                <i class="NavSide__image icon-cement-shoes"></i>
+                <span class="NavSide__text">NPCs</span>
+            </a>
+        </li>
+        <li class="NavSide__item">
+            <a class="NavSide__link" href="#">
+                <i class="NavSide__image icon-village"></i>
+                <span class="NavSide__text">Locations</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="Container">
+    <div class="Alert">The thingy-ma-jig was done good! Many Happy! <i class="icon-smile-o"></i></div>
+</div>
+</body>
 </html>

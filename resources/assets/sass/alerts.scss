@@ -1,0 +1,21 @@
+.Alert{
+  padding: 15px 10px;
+  font-weight: bold;
+  border: 1px solid;
+}
+// TODO: Pick colours and extract to variables.scss
+.Alert--success{
+  color: #2ECC40;
+  border-color: #2ECC40;
+  background: #D3FC9F;
+}
+.Alert--error{
+  color: #9c0033;
+  border-color: #d73131;
+  background: #9c0033;
+}
+.Alert--warning{
+  color: #ffff00;
+  border-color: #8a6d3b;
+  background: #ffff00;
+}

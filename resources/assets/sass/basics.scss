@@ -1,0 +1,18 @@
+body {
+  font-family: $font-headings;
+  color: $gray-darker;
+  background: $background;
+  font-size: $font-size-base;
+}
+
+.Container{
+  position: fixed;
+  top:50px;
+  left:50px;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+.Row{
+  margin: 10px 5px;
+}
