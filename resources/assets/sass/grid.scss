@@ -1,0 +1,41 @@
+@lost gutter 30px;
+
+.Row {
+  lost-flex-container: row;
+}
+
+.Module {
+  margin: 30px 0;
+  box-sizing: border-box;
+  border: 1px solid $gray-dark;
+  lost-column: 1 flex 0px;
+  @media (min-width: $screen-small) {
+    lost-column: 1/2 flex;
+  }
+  @media (min-width: $screen-medium) {
+    lost-column: 1/4 flex;
+  }
+
+}
+
+.Module__heading {
+  background-color: $gray-dark;
+  height: 42px;
+  text-align: center;
+  padding-top: 6px;
+
+}
+
+.Module__title {
+  margin: 0 auto;
+  color: $background;
+  font-family: $font-headings;
+  font-variant: small-caps;
+  font-size: 28px;
+}
+
+.Module__body {
+  padding: 10px;
+  background-color: lighten($gray, 50);
+  height: calc(100% - 68px);
+}

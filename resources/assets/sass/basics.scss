@@ -5,14 +5,21 @@ body {
   font-size: $font-size-base;
 }
 
-.Container{
+.Container {
   position: fixed;
-  top:50px;
-  left:50px;
+  top: 50px;
+  left: 50px;
   bottom: 0;
   right: 0;
-  padding: 25px;
+  padding: 0px;
+  @media (min-width: $screen-small) {
+    padding: 10px;
+  }
+  @media (min-width: $screen-medium) {
+    padding: 25px
+  }
 }
-.Row{
+
+.Row {
   margin: 10px 5px;
 }

@@ -1,4 +1,6 @@
 var elixir = require('laravel-elixir');
+require('laravel-elixir-lost');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -12,5 +14,5 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sassLost('app.scss', 'public/css/app.css');
 });
