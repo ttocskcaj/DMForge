@@ -1,3 +1,4 @@
+@lost flexbox flex;
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2749,55 +2750,22 @@ nav ul, nav li {
   color: #ffff00;
   border-color: #8a6d3b;
   background: #ffff00; }
+
+@lost gutter 30px;
 .Row {
-  display: -webkit-box;
-  display: flex;
-  flex-flow: row wrap; }
+  lost-flex-container: row; }
 
 .Module {
   margin: 30px 0;
   box-sizing: border-box;
   border: 1px solid #3B424F;
-  -webkit-box-flex: 0;
-  flex: 0 0 auto;
-  width: calc(99.9% * 1 - (0px - 0px * 1)); }
-
-.Module:nth-child(1n) {
-  margin-right: 0px;
-  margin-left: 0; }
-
-.Module:last-child {
-  margin-right: 0; }
-
-.Module:nth-child(undefinedn) {
-  margin-right: 0;
-  margin-left: auto; }
+  lost-column: 1 flex 0px; }
   @media (min-width: 700px) {
     .Module {
-      -webkit-box-flex: 0;
-      flex: 0 0 auto;
-      width: calc(99.9% * 1/2 - (30px - 30px * 1/2)); }
-    .Module:nth-child(1n) {
-    margin-right: 30px;
-    margin-left: 0; }
-    .Module:last-child {
-    margin-right: 0; }
-    .Module:nth-child(2n) {
-    margin-right: 0;
-    margin-left: auto; } }
+      lost-column: 1/2 flex; } }
   @media (min-width: 1200px) {
     .Module {
-      -webkit-box-flex: 0;
-      flex: 0 0 auto;
-      width: calc(99.9% * 1/4 - (30px - 30px * 1/4)); }
-    .Module:nth-child(1n) {
-    margin-right: 30px;
-    margin-left: 0; }
-    .Module:last-child {
-    margin-right: 0; }
-    .Module:nth-child(4n) {
-    margin-right: 0;
-    margin-left: auto; } }
+      lost-column: 1/4 flex; } }
 
 .Module__heading {
   background-color: #3B424F;
@@ -2818,5 +2786,3 @@ nav ul, nav li {
   height: calc(100% - 68px); }
 
 /*# sourceMappingURL=lost.css.map */
-
-/*# sourceMappingURL=app.css.map */

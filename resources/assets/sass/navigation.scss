@@ -58,7 +58,9 @@ nav ul, nav li {
   font-weight: bold;
   padding: 12px 16px;
   font-size: 1.2em;
+  height: 26px;
 }
+$navSideTransitionLength: 0.3s;
 
 .NavSide {
   background-color: $gray-dark;
@@ -69,9 +71,11 @@ nav ul, nav li {
   left: 0;
   width: 50px;
   overflow: hidden;
-  -webkit-transition: width 0.1s linear;
-  transition: width 0.1s linear;
+  -webkit-transition: width $navSideTransitionLength ease;
+  transition: width $navSideTransitionLength ease;
   z-index: 99;
+  border-right:1px solid $gray-darker;
+
   /* Widen nav on hover */
   &:hover {
     width: 230px;
@@ -80,13 +84,13 @@ nav ul, nav li {
 }
 
 .NavSide__list {
-  margin: 7px 0;
+  margin: 0px 0;
 }
 
 .NavSide__item {
   position: relative;
   display: block;
-  width: 250px;
+  width: 230px;
 }
 
 .NavSide__link {
@@ -98,8 +102,8 @@ nav ul, nav li {
   text-decoration: none;
   font-variant: small-caps;
   font-size: 20px;
-  -webkit-transition: color .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all $navSideTransitionLength ease;
+  transition: all $navSideTransitionLength ease;
   &:hover {
     color: $highlight;
   }
@@ -127,5 +131,5 @@ nav ul, nav li {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  width: 190px;
+  width: 180px;
 }

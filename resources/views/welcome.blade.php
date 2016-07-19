@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-<!--[if lt IE 8]>
+<!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <nav class="NavTop">
@@ -31,7 +31,7 @@
 <nav class="NavSide">
     <ul class="NavSide__list">
         <li class="NavSide__item">
-            <a href="#" class="NavSide__link">
+            <a href="#" class="NavSide__link NavSide__link--active">
                 <i class="NavSide__image icon-home"></i>
                 <span class="NavSide__text">Dashboard</span>
             </a>
@@ -43,7 +43,7 @@
             </a>
         </li>
         <li class="NavSide__item">
-            <a class="NavSide__link NavSide__link--active" href="#">
+            <a class="NavSide__link " href="#">
                 <i class="NavSide__image icon-cement-shoes"></i>
                 <span class="NavSide__text">NPCs</span>
             </a>
@@ -57,7 +57,86 @@
     </ul>
 </nav>
 <div class="Container">
-    <div class="Alert">The thingy-ma-jig was done good! Many Happy! <i class="icon-smile-o"></i></div>
+    <div class="Row">
+        <div class="Module">
+            <div class="Module__heading">
+                <span class="Module__title">Adventures</span>
+            </div>
+            <div class="Module__body">
+                <p>
+                    Adventures
+                </p>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading">
+                <span class="Module__title">Key Locations</span>
+            </div>
+            <div class="Module__body">
+                <ul>
+                    <li>List</li>
+                    <li>of</li>
+                    <li>cities</li>
+                    <li>and</li>
+                    <li>towns</li>
+                    <li>etc</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading">
+                <span class="Module__title">NPCs</span>
+            </div>
+            <div class="Module__body">
+                <p>
+                    This is the modules content.
+                </p>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading">
+                <span class="Module__title">Maps</span>
+            </div>
+            <div class="Module__body">
+                <p>
+                    This is the modules content.
+                </p>
+            </div>
+        </div>
+
+    {{--</div>--}}
+    {{--<div class="Row">--}}
+        <div class="Module">
+            <div class="Module__heading"><span class="Module__title">Monsters</span></div>
+            <div class="Module__body">
+                <p>This is the modules content</p>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading"><span class="Module__title">Planned Encounters</span></div>
+            <div class="Module__body">
+                <p>This is the modules content</p>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading"><span class="Module__title">Hooks 	&amp; Rumours</span></div>
+            <div class="Module__body">
+                <p>This is the modules content</p>
+            </div>
+        </div>
+        <div class="Module">
+            <div class="Module__heading">
+                <span class="Module__title">Wilderness</span>
+            </div>
+            <div class="Module__body">
+                <p>
+                    This is the modules content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 </body>
 </html>
