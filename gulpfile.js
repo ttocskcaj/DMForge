@@ -15,4 +15,8 @@ require('laravel-elixir-lost');
 
 elixir(function(mix) {
     mix.sassLost('app.scss', 'public/css/app.css');
+    mix.scripts([
+        'jquery/jquery.min.js',
+        'login_register.js'
+    ])
 });

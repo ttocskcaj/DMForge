@@ -1,6 +1,9 @@
-@lost gutter 30px;
-
 .Row {
+  lost-utility: clearfix;
+  width: 100%;
+}
+
+.Row--flexbox {
   lost-flex-container: row;
 }
 
@@ -36,6 +39,6 @@
 
 .Module__body {
   padding: 10px;
-  background-color: lighten($gray, 50);
+  background-color: $gray-light;
   height: calc(100% - 68px);
 }

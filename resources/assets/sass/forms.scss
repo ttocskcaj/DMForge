@@ -1,0 +1,50 @@
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+  -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+
+.Form {
+  margin: 0;
+}
+.Form__group {
+  lost-column: 1;
+}
+
+.Form__label {
+  font-size: 18px;
+  vertical-align: middle;
+
+}
+
+
+.Form__input {
+  width:100%;
+  padding: 6px;
+  font-size: 22px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: $background;
+  border: 1px solid $gray;
+  &:focus {
+    border: 1px solid $highlight;
+    background-color: lighten($highlight, 40%);
+  }
+
+}
+.Form__group--half{
+  lost-column: 1/2 2 10px;
+}
+
+.Form__input--has-error {
+  color: darken($brand-red,20%);
+  background-color: lighten($brand-red, 20%);
+  border-color: darken($brand-red,20%);
+
+}
+
+.Form__checkbox {
+}

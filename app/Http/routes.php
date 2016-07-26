@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', ['uses' => 'Auth\AuthController@welcome', 'as' => 'welcome']);
+
+Route::get('{form}', 'Auth\AuthController@welcomeWithForm')->where(['form' => 'login|register']);
+
+Route::auth();
+
+
+//Route::get('/register', function(){
+//    return redirect('/?showform=login');
+//
+//});
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/dashboard', function() {
+    return view('dashboard');
 });

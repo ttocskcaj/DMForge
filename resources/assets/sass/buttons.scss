@@ -1,0 +1,19 @@
+.Button {
+  background-color: $highlight;
+  color: $gray-light;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button.Button{
+  border: none;
+}
+.Button--active{
+  background-color: darken($highlight, 10);
+  box-shadow: inset 0px 0px 20px 0px darken($highlight, 30);
+}
+.Button--go{
+  background-color: $brand-green;
+}

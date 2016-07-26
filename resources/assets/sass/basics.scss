@@ -5,6 +5,13 @@ body {
   font-size: $font-size-base;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .Container {
   position: fixed;
   top: 50px;
@@ -20,6 +27,40 @@ body {
   }
 }
 
+.Container--centered {
+  lost-center: 980px;
+
+}
+
+.Hidden {
+  display: none;
+}
+
+.Spacer--20 {
+  lost-utility: clearfix;
+  margin: 10px;
+}
+
+.Spacer--50 {
+  lost-utility: clearfix;
+  margin: 25px;
+}
+
 .Row {
-  margin: 10px 5px;
+  margin: 10px 0;
+  lost-flex-container: row;
+}
+
+.Row--centered {
+  lost-align: center;
+}
+
+.TextRight {
+  float: right;
+  text-align: right;
+}
+
+.Link--tiny {
+  font-size: 0.8em;
+  color: $gray-dark;
 }

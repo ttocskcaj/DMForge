@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-<!--[if lt IE 10]>
+<!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <nav class="NavTop">
@@ -57,7 +57,7 @@
     </ul>
 </nav>
 <div class="Container">
-    <div class="Row">
+    <div class="Row--flexbox">
         <div class="Module">
             <div class="Module__heading">
                 <span class="Module__title">Adventures</span>
@@ -104,8 +104,8 @@
             </div>
         </div>
 
-    {{--</div>--}}
-    {{--<div class="Row">--}}
+        {{--</div>--}}
+        {{--<div class="Row">--}}
         <div class="Module">
             <div class="Module__heading"><span class="Module__title">Monsters</span></div>
             <div class="Module__body">

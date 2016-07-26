@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:    url('/fonts/icomoon.eot?akg2jh');
-  src:    url('/fonts/icomoon.eot?akg2jh#iefix') format('embedded-opentype'),
-  url('/fonts/icomoon.ttf?akg2jh') format('truetype'),
-  url('/fonts/icomoon.woff?akg2jh') format('woff'),
-  url('/fonts/icomoon.svg?akg2jh#icomoon') format('svg');
+  src:    url('/fonts/icomoon.eot?7xu71i');
+  src:    url('/fonts/icomoon.eot?7xu71i#iefix') format('embedded-opentype'),
+  url('/fonts/icomoon.ttf?7xu71i') format('truetype'),
+  url('/fonts/icomoon.woff?7xu71i') format('woff'),
+  url('/fonts/icomoon.svg?7xu71i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-anvil-impact:before {
+  content: "\e905";
+}
 .icon-cement-shoes:before {
   content: "\e900";
 }
