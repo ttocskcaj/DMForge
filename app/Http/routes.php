@@ -26,5 +26,5 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/dashboard', function() {
-    return view('dashboard');
+    return view('app.dashboard');
 });

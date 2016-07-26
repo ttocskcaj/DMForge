@@ -2786,10 +2786,6 @@ nav ul, nav li {
   background: #ffff00; }
 
 .Row {
-  lost-utility: clearfix;
-  width: 100%; }
-
-.Row--flexbox {
   lost-flex-container: row; }
 
 .Module {
@@ -2819,7 +2815,7 @@ nav ul, nav li {
 
 .Module__body {
   padding: 10px;
-  background-color: white;
+  background-color: #eaeef2;
   height: calc(100% - 68px); }
 
 h1 {

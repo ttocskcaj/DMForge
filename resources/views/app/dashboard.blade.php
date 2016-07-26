@@ -57,7 +57,7 @@
     </ul>
 </nav>
 <div class="Container">
-    <div class="Row--flexbox">
+    <div class="Row">
         <div class="Module">
             <div class="Module__heading">
                 <span class="Module__title">Adventures</span>
