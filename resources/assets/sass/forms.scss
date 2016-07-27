@@ -20,15 +20,16 @@ input:-webkit-autofill:active {
 
 }
 
-
-.Form__input {
-  width:100%;
+input {
   padding: 6px;
   font-size: 22px;
   height: 40px;
   box-sizing: border-box;
   background-color: $background;
   border: 1px solid $gray;
+}
+.Form__input {
+
   &:focus {
     border: 1px solid $highlight;
     background-color: lighten($highlight, 40%);
@@ -47,4 +48,40 @@ input:-webkit-autofill:active {
 }
 
 .Form__checkbox {
+}
+
+.NavTop__search-container{
+  padding:5px 16px;
+  width: calc (99.99% / 3);
+  border: none;
+}
+.NavTop__search {
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  &:focus{
+    width: 100%;
+    background-color: $background;
+    border: 1px solid $gray;
+    cursor: text;
+  }
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $background;
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $background;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $background;
+    opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    $background;
+    opacity: 1;
+  }
 }

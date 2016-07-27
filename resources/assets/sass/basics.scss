@@ -7,6 +7,7 @@ body {
 
 a {
   text-decoration: none;
+  color: darken($accent,10%);
   &:hover {
     text-decoration: underline;
   }
@@ -49,6 +50,7 @@ a {
 .Row {
   margin: 10px 0;
   lost-flex-container: row;
+  width: 100%;
 }
 
 .Row--centered {

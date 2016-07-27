@@ -28,7 +28,7 @@ nav ul, nav li {
   }
 }
 
-.NavTop__item--right {
+.NavTop__right {
   float: right;
 }
 
@@ -60,6 +60,8 @@ nav ul, nav li {
   font-size: 1.2em;
   height: 26px;
 }
+
+//NavTop__search: See forms.scss
 $navSideTransitionLength: 0.3s;
 
 .NavSide {

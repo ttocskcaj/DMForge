@@ -13,7 +13,7 @@
     <title></title>
     @include('layouts.partials.common')
 </head>
-<body>
+<body style="margin-top: 50px"><!-- Margin to move past top navigation -->
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -23,18 +23,15 @@
         <li class="NavTop__item">
             <a class="NavTop__link NavTop__link--logo" href="#">DMForge</a>
         </li>
-        <li class="NavTop__item">
-            <a class="NavTop__link" href="#">Home</a>
+        <li class="NavTop__item NavTop__search-container icon-foo">
+            <input class="NavTop__search" type="text" name="search" placeholder="&#xf002;">
         </li>
-        <li class="NavTop__item">
-            <a class="NavTop__link" href="#">Campaigns</a>
-        </li>
-        <li class="NavTop__item NavTop__item--right">
+        <span class="NavTop__right">
+            <li class="NavTop__item">
             <a class="NavTop__link" href="#">Account</a>
-        </li>
-        <li class="NavTop__item NavTop__item--right">
-            <a class="NavTop__link" href="#">File</a>
-        </li>
+            </li>
+        </span>
+
     </ul>
 </nav>
 <div class="Container--centered">
