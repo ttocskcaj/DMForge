@@ -160,6 +160,7 @@ return [
          * 3rd Party Service Providers...
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
 
 
     ],
