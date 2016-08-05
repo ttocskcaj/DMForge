@@ -20,7 +20,18 @@ input:-webkit-autofill:active {
 
 }
 
+textarea {
+  padding: 6px;
+  font-size: 22px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $background;
+  border: 1px solid $gray;
+}
+
 input {
+  width: 100%;
   padding: 6px;
   font-size: 22px;
   height: 40px;

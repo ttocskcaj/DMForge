@@ -31,3 +31,4 @@ Route::get('/dashboard', function() {
 
 Route::get('/projects', ['as' => 'projects.index', 'uses' => 'ProjectsController@index']);
 Route::get('/projects/create', ['as' => 'projects.create', 'uses' => 'ProjectsController@create']);
+Route::post('/projects', ['as' => 'projects.store', 'uses' => 'ProjectsController@store']);

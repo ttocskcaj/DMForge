@@ -10,8 +10,12 @@ class Project extends Model
 {
     use Sluggable, ActivityTrait;
     protected $fillable = [
-        'title', 'description', 'password', 'user'
+        'title', 'description'
     ];
+    public function activityVerb()
+    {
+        return 'project';
+    }
 
     public function sluggable()
     {

@@ -33,8 +33,8 @@ class CreateBaseTables extends Migration
             $table->text('description');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->integer('project')->unsigned();
-            $table->foreign('project')->references('id')->on('projects');
+            $table->integer('project_id')->unsigned();
+            $table->foreign('project_id')->references('id')->on('projects');
             $table->timestamps();
             $table->softDeletes();
 
@@ -44,15 +44,26 @@ class CreateBaseTables extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('description');
-            $table->integer('parent')->unsigned()->null();
-            $table->foreign('parent')->references('id')->on('locations');
-            $table->integer('user')->unsigned();
-            $table->foreign('user')->references('id')->on('users');
-            $table->integer('project')->unsigned();
-            $table->foreign('project')->references('id')->on('projects');
+            $table->integer('parent_id')->unsigned()->null();
+            $table->foreign('parent_id')->references('id')->on('locations');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('project_id')->unsigned();
+            $table->foreign('project_id')->references('id')->on('projects');
             $table->timestamps();
             $table->softDeletes();
 
+        });
+        Schema::create('friends' , function (Blueprint $table) {
+            $table->integer('friend_id')->unsigned();
+            $table->integer('user_id')->unsigned();
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('friend_id')->references('id')->on('users');
+
+            $table->primary(array('user_id', 'friend_id'));
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -66,6 +77,7 @@ class CreateBaseTables extends Migration
         Schema::dropIfExists('locations');
         Schema::dropIfExists('npcs');
         Schema::dropIfExists('projects');
+        Schema::dropIfExists('friends');
 
     }
 }
