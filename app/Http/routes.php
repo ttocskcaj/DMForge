@@ -28,3 +28,6 @@ Route::get('/home', 'HomeController@index');
 Route::get('/dashboard', function() {
     return view('app.dashboard');
 });
+
+Route::get('/projects', ['as' => 'projects.index', 'uses' => 'ProjectsController@index']);
+Route::get('/projects/create', ['as' => 'projects.create', 'uses' => 'ProjectsController@create']);

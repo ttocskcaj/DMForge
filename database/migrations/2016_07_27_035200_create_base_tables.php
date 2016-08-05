@@ -17,9 +17,10 @@ class CreateBaseTables extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('description');
-            $table->integer('user')->unsigned();
-            $table->foreign('user')->references('id')->on('users');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
+            $table->softDeletes();
         });
         Schema::create('npcs', function (Blueprint $table) {
             $table->increments('id')->unsigned();
@@ -30,11 +31,13 @@ class CreateBaseTables extends Migration
             $table->string('class');
             $table->string('alignment');
             $table->text('description');
-            $table->integer('user')->unsigned();
-            $table->foreign('user')->references('id')->on('users');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->integer('project')->unsigned();
             $table->foreign('project')->references('id')->on('projects');
             $table->timestamps();
+            $table->softDeletes();
+
         });
         Schema::create('locations', function (Blueprint $table) {
             $table->increments('id')->unsigned();
@@ -48,6 +51,8 @@ class CreateBaseTables extends Migration
             $table->integer('project')->unsigned();
             $table->foreign('project')->references('id')->on('projects');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

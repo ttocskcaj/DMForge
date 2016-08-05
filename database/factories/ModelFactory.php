@@ -23,6 +23,6 @@ $factory->define(App\Project::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->sentence(4),
         'description' => $faker->text(1000),
-        'user' => 1,
+        'user_id' => 1,
     ];
 });

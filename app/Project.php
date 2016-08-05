@@ -3,11 +3,12 @@
 namespace App;
 
 use Cviebrock\EloquentSluggable\Sluggable;
+use GetStream\StreamLaravel\Eloquent\ActivityTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
-    use Sluggable;
+    use Sluggable, ActivityTrait;
     protected $fillable = [
         'title', 'description', 'password', 'user'
     ];
@@ -19,5 +20,9 @@ class Project extends Model
                 'source' => 'title'
             ]
         ];
+    }
+    public function user()
+    {
+        return $this->belongsTo('App\User');
     }
 }

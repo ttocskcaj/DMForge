@@ -161,6 +161,7 @@ return [
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
+        GetStream\StreamLaravel\StreamLaravelServiceProvider::class,
 
 
     ],
@@ -208,6 +209,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'FeedManager'       => GetStream\StreamLaravel\Facades\FeedManager::class,
 
     ],
 
